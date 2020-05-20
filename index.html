@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>致我最爱的蔡小仙女</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+    <div id="content">
+        <div id="code">
+            <span class="comments"></span>
+            <span class="comments">//2017年8月18日</span><br/>
+            我们在<span class="keyword">漳州</span>重新<span class="keyword">相遇，</span><br/>
+            你依旧是那么的<span class="keyword">活泼、美丽、漂亮、深深吸引我的眼球，内心深深为你而跳动</span><br/>
+            <span class="comments">//2017年11月5日 </span><br/>
+            收到了你的回复，我心中雀跃、欢愉久久不能平静。<span class="keyword">这一天我们在一起了</span><br/>
+            <span class="comments">//2017年11月12日 </span><br/>
+            <span class="keyword">第一次经历了蹦极</span>经历了大脑的空白，被悬在半空想的就是你，在那高呼你的名字<br>
+            <span class="comments">//2017年12月2日 </span><br/>
+            <span class="keyword">第一次在一起. </span>霞浦游玩,享受悠闲、快乐的时光，我想这就是我想要的幸福<br>
+            <span class="comments">//2018年3月16日 </span><br/>
+            <span class="keyword">第一次为你做饭. </span>想做出最精美可口的佳肴<br>
+            <span class="comments">//2018年7月14日 </span><br/>
+            <span class="keyword">第一次远游青岛、济南. </span>逛街、美食、风景都是大大的满足，苦恼的就是自己摄影的技术<br>
+            <span class="comments">//2018年9月6日 </span><br/>
+            <span class="keyword">第一次经历了争吵. </span>其实很多争吵都是小事情积累的，我想我们以后要多经常沟通，不能把事情藏在心里~<br>
+            <span class="comments">//2018年9月22日 </span><br/>
+            <span class="keyword">第一次游乐园. </span>体验刺激惊险的项目，但我想说以后有什么危险，我都会在身边保护你~<br>
+            <span class="comments">//2018年12月12日 </span><br/>
+            <span class="keyword">经历了分别. </span>痛彻心扉，日日夜夜的想你，却又要逼迫自己不能去打扰你。还好这一切都过去了~<br>
+            <span class="keyword">后续我们又经历了很多，但重要的是我们开始计划未来了，属于我们的未来。</span><br/>
+            <span class="comments">//未完待续 </span><br/>
+            时间在继续，生活在继续，还有许许多多的事情等待着我们去<span class="keyword">实现</span><br/>
+            <span class="comments">//永远 </span><br/>
+            你是我的<span class="keyword">今天</span>，以及所有的<span class="keyword">明天</span><br/>
+            <span class="comments">________     </span><br/>
+            <span class="comments">________     </span><br/>
+            <span class="comments">________     </span><br/>
+            <span class="comments">________     </span><br/>
+        </div>
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    亲爱的，这是我们相爱在一起的时光。
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    <div class="signature">—— 爱你的许先生</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  let offsetX = $("#loveHeart").width() / 2;
+  let offsetY = $("#loveHeart").height() / 2 - 55;
+  let together = new Date();
+  together.setFullYear(2017, 5, 11);
+  together.setHours(0);
+  together.setMinutes(0);
+  together.setSeconds(0);
+  together.setMilliseconds(0);
+
+  setTimeout(function () {
+    startHeartAnimation();
+  }, 500);
+
+  timeElapse(together);
+  setInterval(function () {
+    timeElapse(together);
+  }, 500);
+
+  adjustCodePosition();
+  $("#code").typewriter();
+</script>
+
+<script type="text/javascript">
+  [].forEach.call(document.querySelector('*'), function (a) {
+    a.style.outline = '1px solid #' + (~~(Math.random() * (1 << 24))).toString(16)
+  })
+</script>
+
+</body>
+</html>
